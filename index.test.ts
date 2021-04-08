@@ -4,7 +4,7 @@ import getFastest, { HostPort } from '.';
 async function getMirrors() : Promise<HostPort[]>{
     return new Promise((resolve) => {
         const contents: string[] = [];
-        const request = https.get("https://www.debian.org/mirror/list", function(response) {
+        https.get("https://www.debian.org/mirror/list", function(response) {
             response.setEncoding("utf8");
             response.on("data", (chunk) => {contents.push(chunk)})
             response.on("end", function () {
