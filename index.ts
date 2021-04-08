@@ -81,7 +81,6 @@ export const isPortReachable = async (port: number, opt: { killSwitch: Promise<a
                 done = true;
             }
         };
-        // socket.setTimeout(timeout);
         killSwitch.then(abort);
         socket.once('error', abort);
 
