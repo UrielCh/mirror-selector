@@ -23,7 +23,11 @@
     "vpn",
     "local"
   ],
-  "author": "Uriel Chemouni <uchemouni@gmail.com>",
+  "author": {
+        "name": "uriel chemouni",
+        "email": "uchemouni@gmail.com",
+        "url": "https://urielch.github.io/urielch/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/UrielCh/mirror-selector/issues"
@@ -39,5 +43,7 @@
   "files": [
     "index.js",
     "index.d.ts"
-  ]
+  ], "engines": {
+    "node": ">= 10"
+  }
 }
